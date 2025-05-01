@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/1ayushman/smart-feedback-system.git'
+                git branch: 'main', url: 'https://github.com/1ayushman/smart-feedback-system.git'
             }
         }
         stage('Install') {
